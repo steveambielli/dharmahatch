@@ -15,6 +15,25 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import Home from './components/Home/Home';
 import blueGrey from '@material-ui/core/colors/blueGrey';
 
+// Firebase App (the core Firebase SDK) is always required and
+// must be listed before other Firebase SDKs
+import * as firebase from "firebase";
+// Add the Firebase services that you want to use
+import "firebase/auth";
+import "firebase/firestore";
+const firebaseConfig = {
+  apiKey: "AIzaSyC-anXEea1GDqmt1yNfjA4fEllOM31H5Wc",
+  authDomain: "dharma-hatch.firebaseapp.com",
+  databaseURL: "https://dharma-hatch.firebaseio.com",
+  projectId: "dharma-hatch",
+  storageBucket: "dharma-hatch.appspot.com",
+  messagingSenderId: "425610153813",
+  appId: "1:425610153813:web:e7f688d9ebc319b0ebe9dc",
+  measurementId: "G-9ZTMC8KHFQ"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
 const theme = createMuiTheme({
   palette: {
     primary: blueGrey,
