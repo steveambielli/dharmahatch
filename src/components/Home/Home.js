@@ -145,7 +145,7 @@ class Home extends Component {
 
     return (
       <div id="home" className={classes.container}>
-        <Grid container spacing={24} className={classes.root}> 
+        <Grid container spacing={24} className={classes.root}>
           <Grid item xs={12}>
             <Paper className={classes.paper}>
               <span className={classes.counterMinutes}>{this.state.time.m}</span>
@@ -162,6 +162,12 @@ class Home extends Component {
           </Grid>
           <Grid item xs={6}>
             <Paper className={classes.paper}>xs=6</Paper>
+          </Grid>
+          <Grid item xs={3}>
+            <Paper className={classes.paper}>xs=3</Paper>
+          </Grid>
+          <Grid item xs={3}>
+            <Paper className={classes.paper}>xs=3</Paper>
           </Grid>
           <Grid item xs={3}>
             <Paper className={classes.paper}>xs=3</Paper>
